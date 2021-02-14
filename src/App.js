@@ -1,5 +1,11 @@
+import Header from "./components/layouts/Header";
+
 function App() {
-  return <div>Dziala</div>;
+  return (
+    <div className="wrap">
+      <Header />
+    </div>
+  );
 }
 
 export default App;
