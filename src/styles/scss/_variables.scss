@@ -1,0 +1,19 @@
+$breakpoints: (
+    xsmall: (min-width: 360px),
+    small: (min-width: 460px),
+    medium: (min-width: 640px),
+    large: (min-width: 800px),
+    xlarge: (min-width: 1024px),
+    xxlarge: (min-width: 1280px),
+    xxxlarge: (min-width: 1440px),
+);
+
+$basic-font-size: 10px;
+$default-font-family: 'roboto', 'sans-serif';
+$max-size-width: 1400px;
+
+$bcg-color: #F2F2F2;
+$primary-color: #0583F2;
+$dark-blue: #035AA6;
+$light-blue: #2994F2;
+$dark-color: #3C4C59;
