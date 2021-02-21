@@ -40,8 +40,6 @@
         font-size: 2rem;
         user-select: none;
         font-weight: bold;
-        color: $bcg-color;
-        transition: .3s linear;
         &--first, &--second, &--third, &--fourth, &--fifth{
             opacity: 0;
             @include mq(xlarge){
@@ -53,9 +51,6 @@
             margin: 1%;
             font-size: 1rem;
             cursor: pointer;
-            &:hover{
-                color: $light-blue;
-            }
         }
     }
     &__logo{
@@ -85,6 +80,15 @@
         }
         @include mq(xxxlarge){
             top: 3vh;
+        }
+    }
+    &__link{
+        display: block;
+        text-decoration: none;
+        color: $bcg-color;
+        transition: .3s linear;
+        &:hover{
+            color: $light-blue;
         }
     }
 }
