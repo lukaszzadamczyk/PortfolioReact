@@ -1,0 +1,90 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    background-color: $dark-color;
+    opacity: 0.9;
+    z-index: 99;
+    transition: 0.3s linear;
+    @include mq(xlarge){
+        opacity: 0.95;
+    }
+    &__list{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        z-index: 99;
+        @include mq(xlarge){
+            top: 0;
+            height: 15vh;
+            background-color: $dark-color;
+            flex-direction: row;
+            transform: translate(-50%,0);
+            justify-content: flex-end;
+        }
+    }
+    &__item{
+        display: block;
+        margin: 1.5%;
+        align-self: center;
+        font-size: 2rem;
+        user-select: none;
+        font-weight: bold;
+        color: $bcg-color;
+        transition: .3s linear;
+        &--first, &--second, &--third, &--fourth, &--fifth{
+            opacity: 0;
+            @include mq(xlarge){
+                opacity: 1;
+            }
+        }
+        @include mq(xlarge){
+            color: #F2F2F2;
+            margin: 1%;
+            font-size: 1rem;
+            cursor: pointer;
+            &:hover{
+                color: $light-blue;
+            }
+        }
+    }
+    &__logo{
+        position: fixed;
+        top: 2vh;
+        left: 1%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        background-color: $dark-color;
+        color: $bcg-color;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        user-select: none;
+        z-index: 100;
+        @include mq(xlarge){
+            top: 4vh;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background-color: $bcg-color;
+            color: $dark-blue;
+            font-size: 1.6rem;
+        }
+        @include mq(xxxlarge){
+            top: 3vh;
+        }
+    }
+}

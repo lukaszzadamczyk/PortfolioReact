@@ -1,0 +1,26 @@
+.burger{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $dark-color;
+    font-size: 2rem;
+    color: $bcg-color;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+    z-index: 100;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s linear;
+    &--active{
+        transform: rotate(45deg);
+    }
+    @include mq(xlarge){
+        display: none;
+    }
+}
+
+
