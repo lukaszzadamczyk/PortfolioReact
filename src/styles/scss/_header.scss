@@ -11,7 +11,7 @@
         transform: translate(-50%,-50%);
         text-align: center;
         z-index: 1;
-        
+        user-select: none;
     }
     &__title{
         top: 50%;

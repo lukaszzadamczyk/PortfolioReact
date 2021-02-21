@@ -1,4 +1,6 @@
-
+html, body{
+  scroll-behavior: smooth;
+}
 body {
   min-height: 200vh;
   background-color: $bcg-color;
@@ -6,3 +8,4 @@ body {
   font-family: $default-font-family;
   color: $dark-color;
 }
+
