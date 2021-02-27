@@ -17,7 +17,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className="header">
+      <header id='first' className="header">
         <p className="header__welcome">Hello !</p>
         <h1 className="header__title">I'm Lukasz Adamczyk</h1>
         <p className="header__span">Web Developer</p>

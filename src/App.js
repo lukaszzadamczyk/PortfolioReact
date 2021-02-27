@@ -1,14 +1,21 @@
+import { BrowserRouter as Router } from "react-router-dom";
+
 import Header from "./components/layouts/Header";
 import Navigation from "./components/layouts/Navigation";
-import { BrowserRouter as Router } from "react-router-dom";
+import About from "./components/layouts/About";
+import Skills from './components/layouts/Skills';
 
 function App() {
   return (
     <Router>
-      <div className="wrap">
+      <>
         <Header />
         <Navigation />
-      </div>
+        <div className="wrap">
+          <About />
+          <Skills/>
+        </div>
+      </>
     </Router>
   );
 }

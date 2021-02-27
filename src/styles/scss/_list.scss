@@ -40,6 +40,7 @@
         font-size: 2rem;
         user-select: none;
         font-weight: bold;
+        text-transform: uppercase;
         &--first, &--second, &--third, &--fourth, &--fifth{
             opacity: 0;
             @include mq(xlarge){

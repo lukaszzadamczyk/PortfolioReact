@@ -1,0 +1,84 @@
+.about{
+    display: flex;
+    height: 100vh;
+    background-color: $dark-color;
+    justify-content: center;
+    align-items: center;
+    @include mq(xlarge){
+        width: 50%;
+    }
+    &__info{
+        width: 80%;
+        height: 70vh;
+        padding: 10% 5%;
+        background-color: darken($color: $dark-color, $amount: 10%);
+        color: $light-blue;
+        overflow: scroll;
+        @include mq(small){
+            @media (orientation: landscape) {
+                height: 80vh;
+                padding: 3% 5%;
+            }
+        }
+        @include mq(xlarge){
+            width: 80%;
+            height: 70vh;
+        }
+    }
+    &__title{
+        font-weight: normal;
+        margin-bottom: 10%;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @include mq(small){
+            @media (orientation: landscape) {
+                margin-bottom: 5%;
+                font-size: 1.5rem;
+            }
+        }
+        @include mq(medium){
+            font-size: 2.5rem;
+            @media (orientation: landscape) {
+                margin-bottom: 5%;
+                font-size: 1.5rem;
+            }
+        }
+        @include mq(xlarge){
+            font-size: 2rem;
+        }
+        @include mq(xxxlarge){
+            font-size: 2.5rem;
+        }
+    }
+    &__text{
+        font-size: 1rem;
+        line-height: 140%;
+        color: $bcg-color;
+        @include mq(xsmall){
+            font-size: 1.2rem;
+        }
+        @include mq(small){
+            font-size: 1.4rem;
+            @media (orientation: landscape) {
+                font-size: 1rem;
+            }
+        }
+        @include mq(medium){
+            font-size: 1.6rem;
+            @media (orientation: landscape) {
+                margin-bottom: 5%;
+                font-size: 1.2rem;
+            }
+        }
+        @include mq(xlarge){
+            font-size: 1.4rem;
+        }
+        @include mq(xxxlarge){
+            font-size: 1.6rem;
+        }
+    }
+    &__span{
+        color: $light-blue;
+    }
+}

@@ -2,10 +2,22 @@ html, body{
   scroll-behavior: smooth;
 }
 body {
-  min-height: 200vh;
   background-color: $bcg-color;
   font-size: $basic-font-size;
   font-family: $default-font-family;
   color: $dark-color;
+  @include mq(xxxlarge){
+    background-color: $dark-color;
+  }
+}
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  @include mq(xlarge){
+    flex-direction: row;
+  }
 }
 
