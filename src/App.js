@@ -3,7 +3,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/layouts/Header";
 import Navigation from "./components/layouts/Navigation";
 import About from "./components/layouts/About";
-import Skills from './components/layouts/Skills';
+import Skills from "./components/layouts/Skills";
+import Projects from "./components/layouts/Projects";
 
 function App() {
   return (
@@ -11,9 +12,12 @@ function App() {
       <>
         <Header />
         <Navigation />
-        <div className="wrap">
-          <About />
-          <Skills/>
+        <div className="wrapper">
+          <div className="wrap">
+            <About />
+            <Skills />
+          </div>
+          <Projects />
         </div>
       </>
     </Router>

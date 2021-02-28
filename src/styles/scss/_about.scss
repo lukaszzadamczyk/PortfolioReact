@@ -8,6 +8,7 @@
         width: 50%;
     }
     &__info{
+        position: relative;
         width: 80%;
         height: 70vh;
         padding: 10% 5%;
@@ -23,6 +24,38 @@
         @include mq(xlarge){
             width: 80%;
             height: 70vh;
+        }
+    }
+    &__img{
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        width: 18%;
+        height: 18%;
+        @include mq(xsmall){
+            top: 2%;
+        }
+        @include mq(medium){
+            top: 7%;
+            width: 10%;
+            height: 10%;
+            @media (orientation: landscape){
+                top: 3%;
+                right: 3%;
+                width: 15%;
+                height: 15%;
+            }
+        }
+        @include mq(xlarge){
+            top: 1%;
+            width: 10%;
+            height: 10%;
+        }
+        @include mq(xxlarge){
+            top: 2%;
+        }
+        @include mq(xxxlarge){
+            top: 4%;
         }
     }
     &__title{

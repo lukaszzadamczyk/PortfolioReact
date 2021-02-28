@@ -8,6 +8,7 @@
         width: 50%;
     }
     &__info{
+        position: relative;
         width: 80%;
         height: 70vh;
         padding: 10% 5%;
@@ -23,6 +24,38 @@
         @include mq(xlarge){
             width: 80%;
             height: 70vh;
+        }
+    }
+    &__img{
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        width: 18%;
+        height: 18%;
+        @include mq(xsmall){
+            top: 2%;
+        }
+        @include mq(medium){
+            top: 7%;
+            width: 10%;
+            height: 10%;
+            @media (orientation: landscape){
+                top: 3%;
+                right: 3%;
+                width: 15%;
+                height: 15%;
+            }
+        }
+        @include mq(xlarge){
+            top: 1%;
+            width: 10%;
+            height: 10%;
+        }
+        @include mq(xxlarge){
+            top: 2%;
+        }
+        @include mq(xxxlarge){
+            top: 4%;
         }
     }
     &__title{
@@ -57,6 +90,7 @@
         font-size: 1rem;
         text-transform: uppercase;
         color: $bcg-color;
+        letter-spacing: 1px;
         @include mq (xsmall){
             font-size: 1.2rem
         }
@@ -67,7 +101,7 @@
             }
         }
         @include mq (medium){
-            font-size: 1.4rem
+            font-size: 1.2rem
         }
         @include mq (large){
             font-size: 1.4rem
@@ -77,22 +111,25 @@
         font-size: 1rem;
         line-height: 140%;
         color: $bcg-color;
-        text-align: justify;
+        letter-spacing: 1px;
         &:nth-of-type(1){
             padding-bottom: 10%;
             border-bottom: 1px solid white;
+            @media (orientation: landscape) {
+                padding-bottom: 5%;
+            }
         }
         @include mq(xsmall){
             font-size: 1.2rem;
         }
         @include mq(small){
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             @media (orientation: landscape) {
                 font-size: 1rem;
             }
         }
         @include mq(medium){
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             @media (orientation: landscape) {
                 margin-bottom: 5%;
                 font-size: 1.2rem;
