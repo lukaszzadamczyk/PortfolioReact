@@ -32,6 +32,7 @@
         right: 5%;
         width: 18%;
         height: 18%;
+        animation: animationAboutIcon 2s infinite alternate linear;
         @include mq(xsmall){
             top: 2%;
         }
@@ -55,7 +56,7 @@
             top: 2%;
         }
         @include mq(xxxlarge){
-            top: 4%;
+            top: 3%;
         }
     }
     &__title{
