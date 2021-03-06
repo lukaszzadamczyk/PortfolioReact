@@ -1,0 +1,16 @@
+.projects{
+    padding-top: 15vh;
+    text-align: center;
+    background-color: $bcg-color;
+    &__title{
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        @include mq(medium){
+            font-size: 2.4rem;
+        }
+        @include mq(xxlarge){
+            font-size: 2.6rem;
+        }
+    }
+}
