@@ -1,0 +1,43 @@
+.social{
+    display: flex;
+    flex-direction: column;
+    background-color: $dark-color;
+    &__wrap{
+        display: flex;
+        width: 100%;
+        align-content: center;
+    }
+    &__link{
+        display: block;
+        color: $light-blue;
+        font-size: 2rem;
+        margin: 5px 20px;
+        text-decoration: none;
+        transition: 0.3s linear;
+        @include mq(medium){
+            font-size: 2.5rem;
+        }
+        @include mq(xlarge){
+            margin: 20px 15px;
+            font-size: 4rem;
+        }
+        @include mq(xxlarge){
+            margin: 30px 15px;
+            font-size: 4rem;
+        }
+        &:hover{
+            color: $dark-blue;
+        }
+    }
+    &__wrap-date{
+        display: flex;
+        align-items: center;
+    }
+    &__date{
+        color: $bcg-color;
+        font-size: 1rem;
+        @include mq(medium){
+            font-size: 1.2rem;
+        }
+    }
+}

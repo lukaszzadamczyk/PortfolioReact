@@ -5,6 +5,8 @@ import Navigation from "./components/layouts/Navigation";
 import About from "./components/layouts/About";
 import Skills from "./components/layouts/Skills";
 import Projects from "./components/layouts/Projects";
+import Contact from "./components/layouts/Contact";
+// import Footer from "./components/layouts/Footer";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Skills />
           </div>
           <Projects />
+          <Contact />
+          {/* <Footer /> */}
         </div>
       </>
     </Router>

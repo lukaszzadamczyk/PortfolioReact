@@ -6,7 +6,7 @@
     height: 100vh;
     background-color: $dark-color;
     opacity: 0.9;
-    z-index: 0;
+    z-index: -1;
     transition: 0.3s linear;
     @include mq(xlarge){
         z-index: 99;

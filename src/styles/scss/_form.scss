@@ -1,0 +1,78 @@
+.contact{
+    &__email{
+        width: 85%;
+        margin-bottom: 5%;
+        padding: 2%;
+        background-color: $bcg-color;
+        color: $dark-blue;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        @include mq(medium){
+            font-size: 1.2rem;
+        }
+        @include mq(xlarge){
+            width: 100%;
+            margin-bottom: 15%;
+        }
+    }
+    &__text{
+        width: 85%;
+        height: 20vh;
+        margin-bottom: 5%;
+        padding: 2%;
+        background-color: $bcg-color;
+        color: $dark-blue;
+        line-height: 130%;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        @include mq(small){
+            height: 30vh;
+        }
+        @include mq(medium){
+            font-size: 1.2rem;
+        }
+        @include mq(xlarge){
+            width: 100%;
+        }
+    }
+    &__valid{
+        display: block;
+        margin-bottom: 2%;
+        font-size: 0.8rem;
+        color: red;
+        @include mq(xxlarge){
+            font-size: 1rem;
+        }
+    }
+    &__button{
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: $dark-color;
+        background-color: $bcg-color;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        user-select: none;
+        @include mq(medium){
+            font-size: 1.2rem;
+        }
+        @include mq(xlarge){
+            font-size: 1.5rem;
+        }
+        &:active{
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        &:hover{
+            color: $bcg-color;
+            background-color: $light-blue;
+        }
+    }
+}

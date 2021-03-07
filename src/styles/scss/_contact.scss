@@ -1,0 +1,62 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    background-color: $dark-color;
+    @include mq(xlarge){
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 15vh;
+    }
+    &__title{
+        font-size: 1.5rem;
+        color: $bcg-color;
+        letter-spacing: 2px;
+        @include mq(medium){
+            font-size: 2rem;
+        }
+        @include mq(xlarge){
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        @include mq(xxlarge){
+            font-size: 2.8rem;
+        }
+    }
+    &__question{
+        font-size: 1rem;
+        color: $bcg-color;
+        padding: 5%;
+        text-align: center;
+        @include mq(medium){
+            font-size: 1.2rem;
+        }
+        @include mq(xlarge){
+            width: 100%;
+            padding: 2%;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    &__form-wrap{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        @include mq(small){
+            width: 80%;
+        }
+        @include mq(medium){
+            width: 60%;
+        }
+        @include mq(xlarge){
+            width: 45%;
+            margin: 5%;
+        }
+        @include mq(xxlarge){
+            width: 30%;
+            margin: 0 15%;
+        }
+    }
+}
