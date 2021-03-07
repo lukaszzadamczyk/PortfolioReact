@@ -22,6 +22,7 @@ const Navigation = () => {
     if (active) {
       burger.style.transform = "rotate(-45deg)";
       menu.style.width = "100%";
+      menu.style.zIndex = "99";
       item1.style.transition = "0.5s linear 0.5s";
       item2.style.transition = "0.5s linear 1s";
       item3.style.transition = "0.5s linear 1.5s";
@@ -33,6 +34,7 @@ const Navigation = () => {
     } else if (!active) {
       burger.style.transform = "rotate(0deg)";
       menu.style.width = "0";
+      menu.style.zIndex = "0";
       list.forEach((item) => {
         item.style.opacity = 0;
         item.style.transition = ".01s";
