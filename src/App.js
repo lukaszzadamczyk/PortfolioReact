@@ -6,7 +6,7 @@ import About from "./components/layouts/About";
 import Skills from "./components/layouts/Skills";
 import Projects from "./components/layouts/Projects";
 import Contact from "./components/layouts/Contact";
-// import Footer from "./components/layouts/Footer";
+import Footer from "./components/layouts/Footer";
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
           </div>
           <Projects />
           <Contact />
-          {/* <Footer /> */}
         </div>
+        <Footer />
       </>
     </Router>
   );
