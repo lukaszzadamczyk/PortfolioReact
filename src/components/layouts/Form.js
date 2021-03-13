@@ -82,7 +82,9 @@ const Form = () => {
         <span className="contact__valid">{messages.textValue_incorrect}</span>
       )}
       <button type="submit" className="contact__button">
-        Send
+        <a className="contact__link" href="mailto:lukaszz.adamczyk@gmail.com">
+          Send
+        </a>
       </button>
     </form>
   );
