@@ -1,6 +1,6 @@
 import React from "react";
 
-const List = () => {
+const List = ({click}) => {
   const navNames = [
     { id: 1, name: "Home", class: "first" },
     { id: 2, name: "About Me", class: "second" },
@@ -10,7 +10,7 @@ const List = () => {
   ];
   const list = navNames.map((item) => (
     <li key={item.id} className={`menu__item menu__item--${item.class}`}>
-      <a className="menu__link" href={`#${item.class}`}>
+      <a onClick={click} className="menu__link" href={`#${item.class}`}>
         {item.name}
       </a>
     </li>

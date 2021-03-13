@@ -43,6 +43,28 @@ const Navigation = () => {
     changeActive();
   };
 
+  const handleItemClick = () => {
+    console.log(window.innerWidth);
+    if (window.innerWidth < 1024) {
+      const list = document.querySelectorAll(".menu__item");
+      const burger = document.querySelector(".burger");
+      const menu = document.querySelector(".menu");
+      setTimeout(() => waitTime(burger, menu, list), 1000);
+
+      changeActive();
+    }
+  };
+
+  const waitTime = (burger, menu, list) => {
+    burger.style.transform = "rotate(0deg)";
+    menu.style.width = "0";
+    menu.style.zIndex = "-1";
+    list.forEach((item) => {
+      item.style.opacity = 0;
+      item.style.transition = ".01s";
+    });
+  };
+
   return (
     <>
       <div onClick={handleShowMenu} className="burger">
@@ -50,7 +72,7 @@ const Navigation = () => {
       </div>
       <nav className="menu">
         <div className="menu__logo">LA</div>
-        <List />
+        <List click={handleItemClick} />
       </nav>
     </>
   );
