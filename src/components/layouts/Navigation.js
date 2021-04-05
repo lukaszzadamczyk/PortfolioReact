@@ -11,6 +11,8 @@ const Navigation = () => {
 
   const handleShowMenu = () => {
     const burger = document.querySelector(".burger");
+    const barsIcon = document.querySelector('.fa-bars')
+    const barsX = document.querySelector('.fa-times')
     const menu = document.querySelector(".menu");
     const list = document.querySelectorAll(".menu__item");
     const item1 = document.querySelector(".menu__item--first");
@@ -20,7 +22,9 @@ const Navigation = () => {
     const item5 = document.querySelector(".menu__item--fifth");
 
     if (active) {
-      burger.style.transform = "rotate(-45deg)";
+      burger.style.color = '#F2F2F2'
+      barsX.style.display = 'block'
+      barsIcon.style.display = 'none'
       menu.style.width = "100%";
       menu.style.zIndex = "99";
       item1.style.transition = "0.5s linear 0.5s";
@@ -32,7 +36,9 @@ const Navigation = () => {
         item.style.opacity = 1;
       });
     } else if (!active) {
-      burger.style.transform = "rotate(0deg)";
+      burger.style.color = '#3C4C59'
+      barsX.style.display = 'none'
+      barsIcon.style.display = 'block'
       menu.style.width = "0";
       menu.style.zIndex = "-1";
       list.forEach((item) => {
@@ -44,19 +50,16 @@ const Navigation = () => {
   };
 
   const handleItemClick = () => {
-    console.log(window.innerWidth);
     if (window.innerWidth < 1024) {
       const list = document.querySelectorAll(".menu__item");
-      const burger = document.querySelector(".burger");
       const menu = document.querySelector(".menu");
-      setTimeout(() => waitTime(burger, menu, list), 1000);
+      setTimeout(() => waitTime(menu, list), 1000);
 
       changeActive();
     }
   };
 
-  const waitTime = (burger, menu, list) => {
-    burger.style.transform = "rotate(0deg)";
+  const waitTime = (menu, list) => {
     menu.style.width = "0";
     menu.style.zIndex = "-1";
     list.forEach((item) => {
@@ -68,7 +71,8 @@ const Navigation = () => {
   return (
     <>
       <div onClick={handleShowMenu} className="burger">
-        +
+      <span className="fas fa-bars"></span>
+      <span className="fas fa-times"></span>
       </div>
       <nav className="menu">
         <div className="menu__logo">LA</div>
