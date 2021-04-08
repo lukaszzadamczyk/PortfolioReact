@@ -3,6 +3,16 @@
     flex-direction: column;
     align-items: center;
     padding: 15vh 0;
+    transition: 1s linear;
+    &:nth-of-type(2){
+        transform: translateX(-100vw);
+    }
+    &:nth-of-type(1), &:nth-of-type(3){
+        transform: scale(0);
+    }
+    &:nth-of-type(4){
+        transform: translateX(100vw);
+    }
     @include mq(xlarge){
         flex-direction: row;
         padding: 10vh 5%;
@@ -73,4 +83,11 @@
             font-size: 1.4rem;
         }
     }
+}
+.project:nth-of-type(1).show, .project:nth-of-type(3).show{
+    transition: 2s;
+    transform: scale(1);
+}
+.project:nth-of-type(2).show, .project:nth-of-type(4).show{
+    transform: translateX(0);
 }

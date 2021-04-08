@@ -2,6 +2,7 @@
     padding-top: 15vh;
     text-align: center;
     background-color: $bcg-color;
+    overflow-x: hidden;
     &__title{
         font-size: 1.8rem;
         letter-spacing: 1px;
