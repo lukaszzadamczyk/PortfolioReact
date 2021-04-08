@@ -9,9 +9,11 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%,-50%);
+        color: $bcg-color;
         text-align: center;
         z-index: 1;
         user-select: none;
+        animation: fontColor 0.5s linear 4.5s forwards;
     }
     &__title{
         top: 50%;

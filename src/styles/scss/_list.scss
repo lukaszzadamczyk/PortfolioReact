@@ -27,11 +27,13 @@
         z-index: 99;
         @include mq(xlarge){
             top: 0;
-            height: 15vh;
-            background-color: $dark-color;
+            height: 0;
+            background-color: darken($color: $dark-color, $amount: 20%);
             flex-direction: row;
             transform: translate(-50%,0);
             justify-content: flex-end;
+            animation: showMenu 0.5s forwards linear 4.5s;
+            // animation-iteration-count:initial;
         }
     }
     &__item{
@@ -45,7 +47,8 @@
         &--first, &--second, &--third, &--fourth, &--fifth{
             opacity: 0;
             @include mq(xlarge){
-                opacity: 1;
+                opacity: 0;
+                animation: showText 0.5s linear 4.5s forwards;
             }
         }
         @include mq(xlarge){
@@ -76,9 +79,10 @@
             width: 60px;
             height: 60px;
             line-height: 60px;
-            background-color: $bcg-color;
-            color: $dark-blue;
+            background-color: darken($color: $bcg-color, $amount: 30%);
+            color: darken($color: $dark-blue, $amount: 30%);
             font-size: 1.6rem;
+            animation: changeLogo 0.5s linear 4.5s forwards;
         }
         @include mq(xxxlarge){
             top: 3vh;

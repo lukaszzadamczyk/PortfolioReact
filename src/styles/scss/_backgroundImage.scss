@@ -9,9 +9,10 @@
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $bcg-color;
+  background-color: darken($color: $bcg-color, $amount: 80%);
   font-size: $basic-font-size;
   overflow: hidden;
+  animation: backgroundAnimation 0.5s linear 4.5s forwards
 }
 
 .backgroundImage {
