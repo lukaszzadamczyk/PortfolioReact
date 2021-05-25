@@ -1,6 +1,6 @@
 import React from "react";
 
-import SkillsImg from "../../assets/svg/Settings-Button.svg";
+import SkillsImg from "../../../assets/svg/Settings-Button.svg";
 
 const Skills = () => {
   return (

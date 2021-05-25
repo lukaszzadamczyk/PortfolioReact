@@ -1,7 +1,7 @@
 import React from "react";
 
-import Form from "./Form";
-import Social from "./Social";
+import Form from "../Form/Form";
+import Social from "../Social/Social";
 
 const dateSocial = [
   {

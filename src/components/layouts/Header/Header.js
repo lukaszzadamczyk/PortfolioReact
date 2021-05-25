@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import BackgroundImage from "../pages/BackgroundImage";
+import BackgroundImage from "../../pages/BackgroundImage";
 
 const Header = () => {
   useEffect(() => {
@@ -17,7 +17,7 @@ const Header = () => {
   };
   return (
     <>
-      <header id='first' className="header">
+      <header id="first" className="header">
         <p className="header__welcome">Hello !</p>
         <h1 className="header__title">I'm Lukasz Adamczyk</h1>
         <p className="header__span">Web Developer</p>

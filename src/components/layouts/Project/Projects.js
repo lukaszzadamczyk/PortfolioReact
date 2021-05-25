@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 
 import Project from "./Project";
 
-import Event1 from "../../assets/img/app/app4.png";
-import First1 from "../../assets/img/first/first4.png";
-import Background1 from "../../assets/img/background/back4.png";
-import One1 from "../../assets/img/one/one4.png";
+import Event1 from "../../../assets/img/app/app4.png";
+import First1 from "../../../assets/img/first/first4.png";
+import Background1 from "../../../assets/img/background/back4.png";
+import One1 from "../../../assets/img/one/one4.png";
 
 const data = [
   {
