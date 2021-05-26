@@ -14,7 +14,7 @@
         padding: 10% 5%;
         background-color: darken($color: $dark-color, $amount: 10%);
         color: $light-blue;
-        overflow: scroll;
+        overflow: hidden;
         @include mq(small){
             @media (orientation: landscape) {
                 height: 80vh;
@@ -23,7 +23,10 @@
         }
         @include mq(xlarge){
             width: 80%;
-            height: 70vh;
+            height: 50vh;
+            @media (orientation: landscape) {
+                height: 65vh;
+            }
         }
     }
     &__img{
