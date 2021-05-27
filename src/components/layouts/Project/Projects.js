@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import Project from "./Project";
 
@@ -57,62 +57,6 @@ const Projects = () => {
       link={project.link}
     />
   ));
-
-  useEffect(() => {
-    window.onscroll = () => {
-      const sectionOne = document.querySelector(".project:nth-of-type(1)");
-      const sectionTwo = document.querySelector(".project:nth-of-type(2)");
-      const sectionThree = document.querySelector(".project:nth-of-type(3)");
-      const sectionFour = document.querySelector(".project:nth-of-type(4)");
-
-      const windowHeight = window.innerHeight;
-      const scrollValue = window.pageYOffset;
-
-      const sectionOneFromTop = sectionOne.offsetTop;
-      const sectionOneHeight = sectionOne.clientHeight;
-
-      const sectionTwoFromTop = sectionTwo.offsetTop;
-      const sectionTwoHeight = sectionTwo.clientHeight;
-
-      const sectionThreeFromTop = sectionThree.offsetTop;
-      const sectionThreeHeight = sectionThree.clientHeight;
-
-      const sectionFourFromTop = sectionFour.offsetTop;
-      const sectionFourHeight = sectionFour.clientHeight;
-
-      if (
-        scrollValue >
-        sectionOneFromTop + sectionOneHeight - windowHeight * 1.5
-      ) {
-        sectionOne.classList.add("show");
-      }
-      if (
-        scrollValue >
-        sectionTwoFromTop + sectionTwoHeight - windowHeight * 1.3
-      ) {
-        sectionTwo.classList.add("show");
-      }
-      if (
-        scrollValue >
-        sectionThreeFromTop + sectionThreeHeight - windowHeight * 1.5
-      ) {
-        sectionThree.classList.add("show");
-      }
-      if (
-        scrollValue >
-        sectionFourFromTop + sectionFourHeight - windowHeight * 1.3
-      ) {
-        sectionFour.classList.add("show");
-      }
-
-      if (scrollValue < 100) {
-        sectionOne.classList.remove("show");
-        sectionTwo.classList.remove("show");
-        sectionThree.classList.remove("show");
-        sectionFour.classList.remove("show");
-      }
-    };
-  }, []);
 
   return (
     <section id="fourth" className="projects">
