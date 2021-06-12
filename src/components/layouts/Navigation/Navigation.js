@@ -27,11 +27,11 @@ const Navigation = () => {
       barsIcon.style.display = "none";
       menu.style.width = "100%";
       menu.style.zIndex = "99";
-      item1.style.transition = "0.5s linear 0.5s";
-      item2.style.transition = "0.5s linear 1s";
-      item3.style.transition = "0.5s linear 1.5s";
-      item4.style.transition = "0.5s linear 2s";
-      item5.style.transition = "0.5s linear 2.5s";
+      item1.style.transition = "0.5s linear 0.3s";
+      item2.style.transition = "0.5s linear 0.6s";
+      item3.style.transition = "0.5s linear 0.9s";
+      item4.style.transition = "0.5s linear 1.2s";
+      item5.style.transition = "0.5s linear 1.5s";
       list.forEach((item) => {
         item.style.opacity = 1;
       });

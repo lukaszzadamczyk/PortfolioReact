@@ -1,6 +1,6 @@
 import React from "react";
 
-const ScrollSquare = ({ clickScroll }) => {
+const ScrollSquare = () => {
   return (
     <div className="scrollSquareWrapper">
       <a href="#first" className="fas fa-arrow-alt-circle-up">

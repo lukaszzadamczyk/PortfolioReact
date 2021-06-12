@@ -14,7 +14,7 @@ const Skills = () => {
         <h2 className="skills__title">Skills</h2>
         <h3 className="skills__front">Front-End</h3>
         <p className="skills__text">
-          HTML, CSS, SASS, SCSS, BEM, RWD, ES6, JavaScript, TypeScript, React,
+          HTML, CSS, SASS, SCSS, BEM, RWD, ES6+, JavaScript, TypeScript, React,
           ReactHooks, ReactRouter, Redux, Webpack
         </p>
         <h3 className="skills__front">Others</h3>

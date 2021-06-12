@@ -6,6 +6,7 @@
         background-color: $bcg-color;
         color: $dark-blue;
         font-size: 1rem;
+        font-family: $default-font-family;
         border: none;
         outline: none;
         @include mq(medium){
@@ -26,6 +27,7 @@
         color: $dark-blue;
         line-height: 130%;
         font-size: 1rem;
+        font-family: $default-font-family;
         border: none;
         outline: none;
         @include mq(small){
