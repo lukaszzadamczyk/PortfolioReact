@@ -1,11 +1,11 @@
 $breakpoints: (
-    xsmall: (min-width: 360px),
-    small: (min-width: 460px),
-    medium: (min-width: 640px),
-    large: (min-width: 800px),
-    xlarge: (min-width: 1024px),
-    xxlarge: (min-width: 1280px),
-    xxxlarge: (min-width: 1440px),
+    xsmall: 360px,
+    small: 460px,
+    medium: 640px,
+    large: 800px,
+    xlarge: 1024px,
+    xxlarge: 1280px,
+    xxxlarge: 1440px,
 );
 
 $basic-font-size: 10px;

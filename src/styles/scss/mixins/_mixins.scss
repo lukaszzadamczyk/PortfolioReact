@@ -1,7 +1,7 @@
 @mixin mq($breakpoint){
     $size: map-get($breakpoints, $breakpoint);
     @if($size){
-        @media #{$size}{
+        @media (min-width: #{$size}){
             @content;
         }
     }
