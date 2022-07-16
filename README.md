@@ -1,3 +1,19 @@
+# HOME PAGE 😊
+
+This application is my home page. This is my portfolio and here I introduce my person. On this page I put my projects and skills that I have. I created it with React. This is my first project of this type.
+
+## Demo 😎
+
+Demo preview of the application: [DEMO](https://lukada.netlify.app/)
+
+## Environment 🧐
+
+**React**: 17.0.2
+
+**react-router-dom**: 5.2.0
+
+**sass**: 1.49.7
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
