@@ -60,7 +60,7 @@ Demo preview of the application: [DEMO](https://lukada.netlify.app/)
 
 <img width="337" alt="ContactMobile" src="https://user-images.githubusercontent.com/62346487/185638230-ca1ba06a-e8fb-4336-8670-5d6c15b19a06.png">
 
-# Getting Started with Create React App
+# Development
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
