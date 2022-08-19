@@ -26,11 +26,11 @@ Demo preview of the application: [DEMO](https://lukada.netlify.app/)
 
 ### 📱 Home Page Mobile View
 
-![HomePageMobile](https://user-images.githubusercontent.com/62346487/185635632-2ee6f2a3-a95d-478d-92c8-eada7a6d9a6c.jpg)
+<img width="337" alt="HomePageMobile" src="https://user-images.githubusercontent.com/62346487/185637420-9919eee7-ee93-434b-b960-41760a5917bc.png">
 
 ### 📱 Menu Mobile View
 
-![MenuMobile](https://user-images.githubusercontent.com/62346487/185635729-dc77ce68-3773-4299-a0e6-700411012d00.jpg)
+<img width="337" alt="MenuMobile" src="https://user-images.githubusercontent.com/62346487/185637567-60670aff-9c3d-4362-8f28-fa6dfcbfccd0.png">
 
 ### 🙋‍♂️🛠 About and Skills View
 
@@ -38,11 +38,11 @@ Demo preview of the application: [DEMO](https://lukada.netlify.app/)
 
 ### 📱 About Mobile View
 
-![AboutMobile](https://user-images.githubusercontent.com/62346487/185635876-c6164cae-7e78-433a-890c-71d5759cd27c.jpg)
+<img width="337" alt="AboutMobile" src="https://user-images.githubusercontent.com/62346487/185637756-b454b708-4892-4da9-babc-f4bc07495759.png">
 
 ### 📱 Skills Mobile View
 
-![SkillsMobile](https://user-images.githubusercontent.com/62346487/185635962-cd9e91d8-f030-4fd3-b3f7-5734c79e8c12.jpg)
+<img width="337" alt="SkillsMobile" src="https://user-images.githubusercontent.com/62346487/185637884-cf45592c-7a27-46b1-bde1-b36c521dd932.png">
 
 ### 👨‍💻 My Projects View
 
@@ -50,7 +50,7 @@ Demo preview of the application: [DEMO](https://lukada.netlify.app/)
 
 ### 📱 My Projects Mobile View
 
-![ProjectMobile](https://user-images.githubusercontent.com/62346487/185636069-d7a031c7-9745-4742-89bd-3018b2d94138.jpg)
+<img width="337" alt="ProjectsMobile" src="https://user-images.githubusercontent.com/62346487/185638081-abb0098c-4e0d-44e9-b4e8-e8750ae2952b.png">
 
 ### 📞 Contact View
 
@@ -58,7 +58,7 @@ Demo preview of the application: [DEMO](https://lukada.netlify.app/)
 
 ### 📱 Contact Mobile View
 
-![ContactMobile](https://user-images.githubusercontent.com/62346487/185636146-c691f60c-7302-4f72-a82f-6db07f165185.jpg)
+<img width="337" alt="ContactMobile" src="https://user-images.githubusercontent.com/62346487/185638230-ca1ba06a-e8fb-4336-8670-5d6c15b19a06.png">
 
 # Getting Started with Create React App
 
